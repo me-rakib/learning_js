@@ -49,6 +49,8 @@ Constructor property and constructor function is not same
 // console.log(obj)
 
 // hide private properties in js 
+
+//get and set 
 let Rectangle = function(width, height) {
     this.width = width
     this.height = height
@@ -65,7 +67,17 @@ let Rectangle = function(width, height) {
         printProperties()
         console.log(position)
     }
+    Object.defineProperty(this, 'position', {
+        get: function() {
+            return position
+        },
+        set: function(value) {
+            position = value
+        }
+    })
 
 }
 let rect = new Rectangle(45,10)
 rect.draw()
+rect.position = {x:10, y:20}
+console.log(rect.position)
