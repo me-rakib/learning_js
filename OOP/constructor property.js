@@ -35,15 +35,37 @@ Constructor property and constructor function is not same
 // console.log(n)
 
 
-let obj = {
-    a: 10,
-    b: 20
-}
+// let obj = {
+//     a: 10,
+//     b: 20
+// }
 
-function chn(obj) {
-    obj.a = obj.a +100
-    obj.b = obj.b + 200
-    console.log(obj)
+// function chn(obj) {
+//     obj.a = obj.a +100
+//     obj.b = obj.b + 200
+//     console.log(obj)
+// }
+// chn(obj)
+// console.log(obj)
+
+// hide private properties in js 
+let Rectangle = function(width, height) {
+    this.width = width
+    this.height = height
+    let position = {
+        X: 56,
+        Y: -100
+    }
+    let printProperties = function() {
+        console.log(`Height = ${this.height}`)
+        console.log(`Width = ${this.width}`)
+    }.bind(this)
+    this.draw = function() {
+        console.log("This is a rectangle")
+        printProperties()
+        console.log(position)
+    }
+
 }
-chn(obj)
-console.log(obj)
+let rect = new Rectangle(45,10)
+rect.draw()
