@@ -61,3 +61,46 @@ Sq.prototype = {
 }
 let s1 = new Sq(10)
 let s2 = new Sq(5)
+
+
+let person = {
+    name : name
+}
+console.log(Object.keys(person))
+for (let i in person) {
+    console.log(i)
+}
+
+console.log(Object.getOwnPropertyDescriptor(person, 'name'))
+
+let base = Object.getPrototypeOf(person)
+let des = Object.getOwnPropertyDescriptor(base, "toString")
+console.log(des)
+
+Object.defineProperty(person, "name", {
+    enumerable: false,
+    writable: false,
+    configurable: false,
+    value: "A"
+})
+
+function Person(value) {
+    this.name = value
+}
+let p = new Person("Hi")
+console.log(Object.getPrototypeOf(p))
+console.log(Person.prototype)
+
+function Square(width) {
+    this.width = width
+}
+Square.prototype = {
+    draw: function () {
+        console.log("Draw")
+    },
+    toString: function() {
+        return `My width is ${this.width}`
+    }
+}
+let s1 = new Square(10)
+let s2 = new Square(5)
