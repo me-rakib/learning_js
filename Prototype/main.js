@@ -104,3 +104,41 @@ Square.prototype = {
 }
 let s1 = new Square(10)
 let s2 = new Square(5)
+
+prototypical Inheritance
+
+function inherit(parent, child) {
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = child
+}
+function Shape(color) {
+    this.color = color 
+}
+inherit(Shape, Sqr)
+Shape.prototype = {
+    common: function() {
+        console.log("In method common")
+    }
+}
+
+function Sqr(width, color) {
+    Shape.call(this, color)
+    this.width = width 
+}
+ 
+Sqr.prototype.draw = function() {
+        console.log("Draw Sqr")
+}
+
+function Circle(color, radious) {
+    this.radious = radious
+    Shape.call(this, color)
+}
+inherit(Shape, Circle)
+Circle.prototype.common = function() {
+    Shape.prototype.common.call(this)
+    console.log("Overriden common function")
+}
+let shape1 = new Shape()
+let sq1 = new Sqr(10, 'green') 
+let c = new Circle('red', 20)
