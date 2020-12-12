@@ -142,3 +142,82 @@ Circle.prototype.common = function() {
 let shape1 = new Shape()
 let sq1 = new Sqr(10, 'green') 
 let c = new Circle('red', 20)
+
+
+function extend(parent, child) {
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = child
+}
+function Shape(color) {
+    this.color = color
+}
+
+Shape.prototype.common = function() {
+    console.log("I'm common")
+}
+
+function Square(width, color) {
+    Shape.call(this, color)
+    this.width = width
+}
+
+
+extend(Shape, Square)
+Square.prototype.draw = function() {
+    console.log("Drawing")
+}
+
+// let s1 = new Shape()
+let sq1 = new Square(10, 'green')
+
+function Circle(radious, color) {
+    this.radious = radious
+    Shape.call(this, color)
+}
+extend(Shape, Circle)
+Circle.prototype.common = function() {
+    Shape.prototype.common.call(this)
+    console.log("Overridden common prototype")
+}
+
+let c = new Circle(1, 'Red')
+
+
+let canWalk = {
+    walk: function() {
+        console.log("Walking...")
+    }
+}
+let canEat = {
+    eat: function() {
+        console.log("Eating...")
+    }
+}
+
+var person = Object.assign({}, canWalk, canEat)
+person.name = "Rakib"
+function mixin(target, ...sources) {
+    Object.assign(target, ...sources)
+}
+
+function Person(name) {
+    this.name = name
+}
+mixin(Person.prototype, canWalk, canEat)
+let person = new Person("Rakib")
+console.log(person)
+
+
+function GoldFish(name) {
+    this.name = name
+}
+let canSwim = {
+    swim: function() {
+        console.log("Swimming...")
+    }
+}
+
+mixin(GoldFish.prototype, canEat, canSwim)
+
+let G = new GoldFish("AAA")
+console.log(G)
