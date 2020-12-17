@@ -3,12 +3,12 @@ let age = 20
 let a = age > 18 ? "Adult" : "Not Adult"
 console.log(a)
 
-template string 
+// template string 
 
 let name = "ABC"
 console.log(name.padStart(5, 0))
 
-Array function
+// Array function
 
 let sum = (a,b) => a+b
 console.log(sum(10,20))
@@ -25,7 +25,7 @@ let even_odd = x => {
 }
 console.log(even_odd(10))
 
-Array Function
+// Array Function
 
 let test = () => {
     console.log(this)
@@ -70,7 +70,7 @@ let obj = {
 }
 obj.print()
 
-and or
+// and or
 
 function sqr(n=10) {
     return n * n
