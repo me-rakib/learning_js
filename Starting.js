@@ -186,3 +186,100 @@ NaN, undefined
 // }
 
 // https://youtu.be/rZHeuqMFSLA?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+// for(let i=1; i<=10; i++) {
+//     console.log(`${i} * 5 = ${i*5}`)
+// }
+
+// let i=1
+// while(i<=10) {
+//     console.log(`${i} * 5 = ${i*5}`)
+//     i++
+// }
+
+// let isRunning = true
+// while(isRunning) {
+//     let rn = Math.round(Math.random()*(10-1)+1)
+//     if(rn!==9) {
+//         console.log(`${rn} - Winner`)
+//     } else
+//     {
+//         isRunning = false
+//     }
+// }
+
+// let rn = Math.round(Math.random()*10)
+// console.log(rn)
+
+// use of while 
+
+// let isOk = true
+// while(isOk) {
+//     let rn = Math.round(Math.random()*(10-1)+1)
+//     if(rn!=9) {
+//         console.log(`Random: ${rn} Winner`)
+//     } else {
+//         isOk = false
+//     }
+// }
+
+
+// do while - will exicute first time whether condition is true or not 
+
+// let isOk = false
+
+// do {
+//     console.log("Winner")
+// } while(isOk)
+
+/*
+print this 
+1 
+1 2
+1 2 3
+*/
+
+// for (let i=1; i<=20; i++) {
+//     let result = ''
+//     for(let j=1; j<=i; j++) {
+//         result += j + ' '
+//     }
+//     console.log(result)
+// }
+
+// for(let i=1; i<=10; i++) {
+//     let result = ''
+//     for(let j=1; j<=20; j++) {
+//         result += '* '
+//     }
+//     console.log(result)
+// }
+
+// break 
+
+// for(let i=1; i<10; i++) {
+//     if(i%5===0) {
+//         break
+//     } else {
+//         console.log(i)
+//     }
+// }
+
+// continue 
+
+// for(let i=0; i<10; i++) {
+//     if(i==3 || i==7) {
+//         continue;
+//     } else {
+//         console.log(i)
+//     }
+// } 
+
+
+// string literal vs string constructor 
+let str = 100
+console.log(str)
+let str1 = String(str)
+console.log(str1)
+
+// https://youtu.be/BQ6fDZS0nFQ?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
