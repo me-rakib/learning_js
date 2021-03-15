@@ -277,9 +277,60 @@ print this
 
 
 // string literal vs string constructor 
-let str = 100
-console.log(str)
-let str1 = String(str)
-console.log(str1)
+// let str = 100
+// console.log(str)
+// let str1 = String(str)
+// console.log(str1)
 
 // https://youtu.be/BQ6fDZS0nFQ?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+// escape character 
+
+// let nam = 'Hello \'world\''
+// nam = 'Hello \tworld'
+// nam = 'Hello \nworld'
+// console.log(nam)
+
+// string comparison 
+
+// let a = 'a'
+// let b = 'a '
+
+// console.log(b>a) // space has a value 
+
+// z>a and Z>A because of ASCII value 
+
+
+// string method
+
+// let a = 'I am'
+// let b = 'Rakib Hasan'
+// let c = a.concat(' ', b)
+// let d = c.charAt(5)
+// let e = c.substr(5, 5)
+//console.log(e)
+
+// console.log(c.startsWith('I am'))
+// console.log(c.endsWith('Hasan'))
+
+// console.log(c.toUpperCase())
+// console.log(c.toLowerCase())
+
+// console.log('    he  hhhh  lll   '.trim())
+// console.log(c.split(' '))
+
+// let a = 'Rakib Hasan'
+// let length = 0
+// while(true) {
+//     if(a.charAt(length) == '') {
+//         console.log(length)
+//         break
+//     } else {
+//         length++
+//     }
+// }
+
+// let a = 'Rakib Hasan'
+// console.log(a.length)
+
+// https://youtu.be/448YqBQLlOk?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
