@@ -334,3 +334,69 @@ print this
 // console.log(a.length)
 
 // https://youtu.be/448YqBQLlOk?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+// Array
+
+// let arr = [1,2,3,4,5,6,7,8]
+
+// for(let i=0; i<arr.length; i++) {
+//     console.log(arr[i])
+// }
+
+// let arr = [1,2,3,4,5,6,7,8]
+
+// for(let i=0; i<arr.length; i++) {
+//     console.log(arr[i]+2)
+// }
+
+// let arr = [1,2,3,4,5,6,7,8]
+// let sum = 0
+// for(let i=0; i<arr.length; i++) {
+//     sum += arr[i]
+// }
+// console.log(sum)
+
+// let arr = [1,2,3,4,5,6,7,8]
+// for(let i=0; i<arr.length; i++) {
+//     if(arr[i]%2===0) {
+//         console.log(arr[i])
+//     }
+// }
+
+// let arr = [1,2,6,7,8]
+// arr.push(90)
+// arr.unshift(100)
+// console.log(arr)
+// arr.splice(1, 2, 100)
+// console.log(arr)
+
+
+// let arr = [1,2,3,4]
+// arr.splice(0, 2, 10,20,30)
+// console.log(arr)
+
+// let arr = [1,2,3,4,5]
+// arr.splice(0, 1)
+// console.log(arr)
+
+// let arr = [1,2,3]
+// arr.splice(0, 1, 100)
+// console.log(arr)
+
+// let arr = [1,2,3,4,5,6,7,8]
+// let n = 0
+// let search = 8
+// for(let i=0; i<arr.length; i++) {
+//     if(search===arr[i]) {
+//         n = 1;
+//         break
+//     }
+// }
+// if(n===1) {
+//     console.log("Found")
+// } else {
+//     console.log("Not Found")
+// }
+
+
+// https://youtu.be/Ei7kbCe8YEw?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
