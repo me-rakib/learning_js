@@ -400,3 +400,55 @@ print this
 
 
 // https://youtu.be/Ei7kbCe8YEw?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+// two dimentional array
+
+// let arr = [
+//     [1,2,3,4],
+//     [10,20,30],
+//     [40,50]
+// ]
+
+// console.log(arr)
+
+// for(let i=0; i<arr.length; i++) {
+//     for(let j=0; j<arr[i].length; j++) {
+//         console.log(`Element of ${i} = ${arr[i][j]}`)
+//     }
+// }
+
+// reverse an array 
+// let arr = [1,2,3,4,5]
+
+// for(let i=0; i<(arr.length)/2; i++) {
+//     let temp = arr[i]
+//     arr[i] = arr[arr.length-1-i]
+//     arr[arr.length-1-i] = temp
+// }
+// console.log(arr)
+
+// let arr = [1,2,3,4,5]
+// console.log(arr.reverse())
+
+// array method 
+
+// let arr = [1,2,3,4,5]
+// console.log(arr.join(', '))
+// console.log(arr.fill("Hello"))
+
+// let arr2 = [10,20,30];
+// let arr3 = arr.concat(arr2)
+// console.log(arr3)
+
+// console.log(Array.isArray(arr))
+
+// let arr2 = Array.from(arr)
+// console.log(arr2)
+
+// let a = [1,2]
+// let b = a
+// b[0] = 100
+// console.log(a)
+// let b = Array.from(a)
+// b[0] = 100
+// console.log(a, b)
