@@ -452,3 +452,104 @@ print this
 // let b = Array.from(a)
 // b[0] = 100
 // console.log(a, b)
+
+// https://youtu.be/bS0hd6plTF4?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+// let obj = {}
+// console.log(typeof obj)
+
+// obj literal
+// let point = {
+//     x: 10, 
+//     y: 20
+// }
+// point.z = 100
+// console.log(point)
+
+// Object constructor
+// let obj = Object()
+// obj.a = 10
+// console.log(obj)
+
+// let obj2 = new Object()
+// obj2.b = 100
+// console.log(obj2)
+
+
+// accessing object element 
+
+// let marks = {
+//     x: 10,
+//     y: 20,
+//     z: 30
+// }
+
+// console.log(marks.x)
+// console.log(marks.y)
+// console.log(marks.x + marks.y)
+// console.log(marks['x'])
+// console.log(marks['y'])
+
+// let show = 'x'
+// console.log(marks[show])
+
+// add or replace obj
+// let marks = {
+//     x: 10,
+//     y: 20,
+//     z: 30
+// }
+// console.log(marks)
+
+// marks.x = 33
+// marks.a = 40
+
+// let change = 'z'
+// marks[change] = -10
+
+// let aaa = 'b'
+// marks[aaa] = -111
+// console.log(marks)
+
+
+// remove from object 
+
+
+// let marks = {
+//     x: 10,
+//     y: 20,
+//     z: 30
+// }
+
+// marks['a'] = 13
+// console.log(marks)
+
+// delete marks['a']
+// delete marks.x
+// console.log(marks)
+
+
+// Object compare 
+
+// let obj1 = {
+//     x: 10,
+//     y: 20
+// }
+
+// let obj2 = {
+//     x: 10,
+//     y: 20
+// }
+
+// if((obj1.x===obj2.x) && (obj1.y===obj2.y)) {
+//     console.log(true)
+// } else {
+//     console.log(false)
+// }
+
+// console.log(obj1)
+// console.log(JSON.stringify(obj1))
+
+// console.log(JSON.stringify(obj1)===JSON.stringify(obj2))
+
+//https://youtu.be/TyMrsaDp5gE?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
