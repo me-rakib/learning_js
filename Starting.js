@@ -553,3 +553,82 @@ print this
 // console.log(JSON.stringify(obj1)===JSON.stringify(obj2))
 
 //https://youtu.be/TyMrsaDp5gE?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+
+// iterate object properties in JS
+
+// let obj = {
+//     x: 10,
+//     y: 20,
+//     z: 30
+// }
+// console.log('x' in obj)
+// console.log('p' in obj)
+
+// for(i in obj) {
+    // console.log(i)
+    // console.log(obj[i])
+    // console.log(`${i}: ${obj[i]}`)
+// }
+
+// let arr = [1,2,1,1,1]
+// let ar2 = Array.from(arr)
+// ar2[0] = 10
+// console.log(arr)
+// console.log(ar2)
+
+// let obj = {
+//     x: 10,
+//     y: 20,
+//     z: 30
+// }
+
+// console.log(Object.keys(obj))
+// console.log(Object.values(obj))
+// console.log(Object.entries(obj))
+
+// copy an object
+
+// let obj2 = Object.assign(obj)
+// obj2.z = 10
+// obj['x'] = 50
+// console.log(obj2)
+
+// function
+
+// let date = new Date()
+// console.log(date.getFullYear())
+
+// function 
+
+// function add(a,b) {
+//     let result = a+b
+//     console.log(result)
+// }
+
+// add(10, 20)
+
+// function sub(a,b) {
+//     let result = a - b
+//     console.log(result)
+// }
+// sub(10,20)
+
+// let arr1 = [1,2,3,4,5]
+// let arr2 = [2,10,5,7]
+// let arr3 = [10,20]
+
+// function sumOfArray(arr) {
+//     let sum = 0
+//     for(let i=0; i<arr.length; i++) {
+//         sum += arr[i]
+//     }
+//     console.log(sum)
+// }
+// sumOfArray(arr1)
+// sumOfArray(arr2)
+// sumOfArray(arr3)
+
+// to duplicate - Shift + Alt + Down
+//62
+//https://youtu.be/pQJf2PY-8Ls?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
