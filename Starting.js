@@ -632,3 +632,93 @@ print this
 // to duplicate - Shift + Alt + Down
 //62
 //https://youtu.be/pQJf2PY-8Ls?list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1
+
+
+// Argument object in javascript 
+
+// function print_num() {
+//     for(let i=0; i<arguments.length; i++) {
+//         console.log(arguments[i])
+//     }
+// }
+// print_num(1,2,3,4,5)
+
+// function hello(a,b,c) {
+//     console.log(arguments)
+// }
+// hello(1,2,3)
+
+
+// add as many number as you want 
+
+// function add() {
+//     let sum = 0
+//     for(let i=0; i<arguments.length; i++) {
+//         sum += arguments[i]
+//     }
+//     console.log(sum)
+// }
+// add(1,2,3,4,5)
+// add(1,2)
+
+// return 
+
+// function add(a,b) {
+//     return a+b
+// }
+
+// let sum = add(1,2)
+// console.log(sum)
+
+// function person(name, email) {
+//     return {
+//         name: name,
+//         email: email
+//     }
+// }
+
+// let p1 = person('Rakib', 'rakib.cs132@gmail.com')
+// console.log(p1) 
+
+// function expression 
+
+// let add = function(a,b) {
+//     return a+b
+// }
+
+// let addition = add
+
+// console.log(addition(1,10))
+
+
+// setTimeout(function() {
+//     console.log(`I'll print after 5 sec`)
+// }, 5000)
+
+// inner function 
+
+// function sayHi(greet, name) {
+//     function getFirstName() {
+//         if(name) {
+//             return name.split(' ')[0]
+//         } else {
+//             return 'User'
+//         }
+//     }
+//     console.log(greet, getFirstName())
+// }
+// sayHi('Good Morning')
+
+// function sayHi(greet, name) {
+//     function getFirstName() {
+//         if(name) {
+//             return name.split(' ')[0]
+//         } else {
+//             return 'User'
+//         }
+//     }
+//     console.log(greet, getFirstName())
+// }
+// sayHi('Good Night', 'Rakib Hasan')
+
+// https://youtu.be/y2cT2E2u_Mg
