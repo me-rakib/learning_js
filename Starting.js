@@ -722,3 +722,48 @@ print this
 // sayHi('Good Night', 'Rakib Hasan')
 
 // https://youtu.be/y2cT2E2u_Mg
+
+// scope 
+
+// console.log(a)
+// let a = 'Hello world'
+
+// console.log(a)
+
+
+// fun()
+// function fun() {
+//     console.log("Hello")
+// }
+
+// let ac = 'hello'
+
+// function a() {
+//     ac = "Inside a"
+//     function b() {
+//         ac = 'INSIDE b'
+//         console.log(ac)
+//     }
+//     console.log(ac)
+//     b()
+// }
+// console.log(ac)
+// a()
+
+// function fun(n) {
+//     function a() {
+//         return n%3 === 0
+//     }
+//     function b() {
+//         return n%5 === 0
+//     }
+//     if(a() && b()) {
+//         console.log("True")
+//     } else {
+//         console.log("False")
+//     }
+// }
+// fun(15)
+
+
+// https://www.youtube.com/watch?v=mSESQG-ek8I&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=68&ab_channel=StackLearner
