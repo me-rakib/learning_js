@@ -769,3 +769,134 @@ print this
 // https://www.youtube.com/watch?v=mSESQG-ek8I&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=68&ab_channel=StackLearner
 
 // https://www.youtube.com/watch?v=pOcNXZlhhMU&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=69
+
+
+// Pure function
+
+/*
+It'll return the same result if the same argument is given.
+It does not cause any observeable side effects.
+*/
+
+// function sq(n) {
+//     return n*n
+// }
+
+// console.log(5)
+
+// let n = 100
+// function change() {
+//     n = 10
+// }
+
+// console.log(n)
+// change()
+// console.log(n)
+
+// let point = {
+//     x: 10,
+//     y: 20
+// }
+
+// function change(point) {
+//     point.x = 100
+//     point.y = 200
+// }
+// console.log(point)
+// change(point)
+// console.log(point)
+
+// first class function
+
+// function add(x, y) {
+//     return x+y
+// }
+// 1. function can be stored in a variable 
+// let sum = add
+// console.log(typeof sum)
+// console.log(sum(1,2))
+
+// 2. function can be stored in an array
+
+// let arr = []
+// arr.push(add)
+// console.log(arr)
+// console.log(typeof arr[0])
+// console.log(arr[0](1,3))
+
+// 3. Function can be stored in an object
+
+// let obj = {
+//     Obj_add: add
+// }
+
+// console.log(obj)
+// console.log(typeof obj.Obj_add)
+// console.log(obj.Obj_add(2,3))
+
+// 4. we can create function as need
+
+// setTimeout(function() {
+//     console.log("Hello ")
+// },2000)
+
+// higher order function 
+
+// 1. pass function as argument 
+// 2. return function from a function 
+
+// function add(a,b) {
+//     return a+b
+// }
+
+// function multiply(a, b, sum) {
+//     let c = sum(a,b)
+//     let d = a - b
+//     return function() {
+//         return c*d*sum(a,b)
+//     }
+// }
+
+// let rs = multiply(3,4,add)
+// console.log(rs())
+
+// closure 
+
+// function c() {
+//     var x = 5
+//     return function() {
+//         console.log(x)
+//     }
+// }
+// var abc = c()
+// console.dir(abc)
+
+// callback function
+
+// function sample(a, b, cb) {
+//     let c = a+b
+//     let d = a-b
+//     let result = cb(c,d)
+//     return result
+// }
+// function add(a,b) {
+//     return a+b
+// }
+// let res = sample(5,4,add)
+// console.log(res)
+// let res1 = sample(5,4, function(a,b) {
+//     return a+b
+// })
+// console.log(res1)
+
+// let res2 = sample(5,4, function(a,b) {
+//     return a*b
+// })
+// console.log(res2 )
+// let res3 = sample(5,4,function(a,b) {
+//     return a/b
+// })
+// console.log(res3)
+
+
+// https://www.youtube.com/watch?v=1mItbWuvrMw&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=74
