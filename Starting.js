@@ -900,3 +900,95 @@ It does not cause any observeable side effects.
 
 
 // https://www.youtube.com/watch?v=1mItbWuvrMw&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=74
+
+
+// for each 
+
+// let arr= [1,2,3,4,5]
+// arr.forEach(function(value, index, array) {
+//     console.log(value, index, array)
+// })
+
+// let sum = 0
+// arr.forEach(function(value, index, array) {
+//     sum+=value
+// })
+// console.log(sum)
+
+//for each implementation 
+
+// function forEach(arr, cb) {
+//     for(let i=0; i<arr.length; i++) {
+//         cb(arr[i], i, arr);
+//     }
+// }
+
+// let sum=0
+// forEach(arr, function(value, index, array) {
+//      console.log(value, index, array)
+//     //sum+=value
+// })
+
+// forEach(arr, function(value, index, array) {
+//     arr[index] = value + 5
+// })
+// console.log(arr)
+
+// map function
+
+// let arr = [1,2,3]
+
+// let sqr = arr.map(function(value) {
+//     return value * value
+// })
+// console.log(arr)
+// console.log(sqr)
+
+// function myMap(arr, cb) {
+//     let newArr = []
+//     for(let i=0; i<arr.length; i++) {
+//         let temp = cb(arr[i])
+//         newArr.push(temp)
+//     }
+//     return newArr
+// }
+// let sq = myMap(arr, function(value) {
+//     return value * value 
+// })
+// console.log(arr)
+// console.log(sq)
+
+// filter 
+
+let arr = [1,2,3,4,5,6,7,8,9]
+
+// let ev = arr.filter(function(value) {
+//     return value%2===0
+// })
+// console.log(ev)
+
+// let odd = arr.filter(function(value) {
+//     return value%2===1
+// })
+// console.log(odd)
+
+// function myFilter(arr, cb) {
+//     let newArr = []
+//     for(let i=0; i<arr.length; i++) {
+//         if(cb(arr[i])) {
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr
+// }
+
+// console.log(myFilter(arr, function(value) {
+//      return value % 2 == 0
+// }))
+
+// console.log(myFilter(arr, function(value) {
+//     return value %2 ==1
+// }))
+
+
+// https://www.youtube.com/watch?v=YAvJVcVKwu8&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=77&ab_channel=StackLearner
