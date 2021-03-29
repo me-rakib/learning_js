@@ -960,7 +960,7 @@ It does not cause any observeable side effects.
 
 // filter 
 
-let arr = [1,2,3,4,5,6,7,8,9]
+// let arr = [1,2,3,4,5,6,7,8,9]
 
 // let ev = arr.filter(function(value) {
 //     return value%2===0
@@ -992,3 +992,117 @@ let arr = [1,2,3,4,5,6,7,8,9]
 
 
 // https://www.youtube.com/watch?v=YAvJVcVKwu8&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=77&ab_channel=StackLearner
+
+
+// reduce 
+
+// let arr1 = [1,2,3,4,5]
+// let sum = arr1.reduce(function(prev, curr) {
+//     return prev+curr
+// })
+// console.log(sum)
+
+// let max = arr1.reduce(function(prev, curr) {
+//     return Math.max(curr,prev)
+// })
+// console.log(max)
+
+// let arr1 = [1, 2, 3, 4, 5]
+
+// let min = arr1.reduce(function(prev, curr) {
+//     return Math.min(prev, curr)
+// })
+// console.log(min)
+
+
+// reduce 
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let res = arr.reduce(function(prev, curr) {
+//     return prev + curr
+// })
+
+// console.log(res)
+
+// let max = arr.reduce(function(prev, curr) {
+//     return Math.max(prev, curr)
+// })
+
+// console.log(max)
+
+// let min = arr.reduce(function(prev, curr) {
+//     return Math.min(prev, curr)
+// })
+// console.log(min)
+
+// implementation of reduce 
+
+// let arr = [1,2,3,4,5]
+// function myReduce(arr, cb, acc) {
+//     for(let i=0; i<arr.length; i++) {
+//         acc = cb(acc, arr[i])
+//     }
+//     return acc
+// }
+
+// let sum = myReduce(arr, function(prev, curr) {
+//     return prev+curr
+// }, 0)
+
+// let max = myReduce(arr, function(prev, curr) {
+//     return Math.max(prev,curr)
+// }, arr[0])
+
+// let min = myReduce(arr, function(prev, curr) {
+//     return Math.min(prev, curr)
+// }, arr[0])
+
+// console.log(sum, max, min)
+
+
+// find and find index
+
+// let arr = [1,2,3,4,5,6,7,8]
+
+// let r = arr.find(function(value) {
+//     return value === 8
+// })
+
+// console.log(r)
+
+// let r = arr.findIndex(function(value) {
+//     return value == 3
+// })
+// console.log(r)
+
+// function myFind(arr, cb) {
+//     for(let i=0; i<arr.length; i++) {
+//         if(cb(arr[i])) {
+//             return arr[i]
+//         }
+//     }
+// }
+
+// let r = myFind(arr, function(value) {
+//     return value === 80
+// })
+
+// console.log(r)
+
+// function myFindIndex(arr, cb) {
+//     for(let i=0; i<arr.length; i++) {
+//         if(cb(arr[i])) {
+//             return i
+//         }
+//     }
+// }
+
+// let r = myFindIndex(arr, function(value) {
+//     return value === 1
+// })
+
+// console.log(r)
+
+
+// https://www.youtube.com/watch?v=IHjLft2UU_g&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=79&ab_channel=StackLearner
