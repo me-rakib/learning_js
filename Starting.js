@@ -1106,3 +1106,122 @@ It does not cause any observeable side effects.
 
 
 // https://www.youtube.com/watch?v=IHjLft2UU_g&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=79&ab_channel=StackLearner
+
+
+// sort some and every
+
+// let arr = [-1,2,1,7,3,-8,0,356,84,100]
+// let arr1 = arr
+// assending order 
+// arr.sort(function(a,b) {
+//     if(a>b) {
+//         return 1
+//     } else if(a<b) {
+//         return -1
+//     } else {
+//         return 0
+//     }
+// })
+// console.log(arr)
+
+// descending order 
+// arr1.sort(function(a,b) {
+//     if(a>b) {
+//         return -1
+//     } else if(a<b) {
+//         return 1
+//     } else {
+//         return 0
+//     }
+// })
+
+// console.log(arr1)
+
+// let arr = [
+//     {Obj: 1, name: "A"},
+//     {Obj: 2, name: "C"},
+//     {Obj: 3, name: "B"},
+//     {Obj: -1, name: "Z"}
+// ] 
+
+// arr.sort(function(a,b) {
+//     if(a.Obj>b.Obj) {
+//         return 1
+//     } else if(a.Obj<b.Obj) {
+//         return -1
+//     } else {
+//         return 0
+//     }
+// })
+
+// console.log(arr)
+
+// arr.sort(function(a,b) {
+//     if(a.Obj>b.Obj) {
+//         return -1
+//     } else if(a.Obj<b.Obj) {
+//         return 1
+//     } else {
+//         return 0
+//     }
+// })
+
+// console.log(arr) 
+
+
+// some every 
+
+// let arr = [0,1,2,3,4,5,6,7,8]
+
+// let res1 = arr.every(function(value) {
+//     return value % 2 === 0
+// })
+
+// let res1 = arr.some(function(value) {
+//     return value % 2 === 0 
+// })
+// console.log(res1)
+
+// let res1 = arr.some(function(value) {
+//     return value % 2 === 0
+// })
+
+// let res2 = arr.every(function(value) {
+//     return value % 2 === 0
+// })
+
+// console.log(res1, res2)
+
+
+// return function
+
+// function greet(greetings) {
+//     function name(pass_name) {
+//         return `${greetings}, ${pass_name}!`
+//     }
+//     return name
+// }
+
+// let name = greet("Good Morning")
+// console.log(name("Rakib Hasan"))
+
+
+
+
+// function base(b) {
+//     return function(n) {
+//         let res = 1
+//         for(let i=0; i<b; i++) {
+//             res *= n
+//         }
+//         return res
+//     }
+// }
+
+// let base10 = base(10)
+// let base5 = base(5)
+// let base2 = base(2)
+
+// console.log(base5(2))
+
+// https://www.youtube.com/watch?v=5eMlqhgb6i0&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=81&ab_channel=StackLearner
