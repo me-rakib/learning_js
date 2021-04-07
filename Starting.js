@@ -1225,3 +1225,67 @@ It does not cause any observeable side effects.
 // console.log(base5(2))
 
 // https://www.youtube.com/watch?v=5eMlqhgb6i0&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=81&ab_channel=StackLearner
+
+
+// recursion 
+
+// function print(n) {
+//     if (n===0) {
+//         return
+//     }
+//     print(n-1)
+//     console.log(`Hello - ${n}`)
+// }
+// print(10)
+
+// function fact(n) {
+//     if(n===1) {
+//         return 1
+//     }
+//     return n * fact(n-1)
+// }
+// let res = fact(5)
+// console.log(res)
+
+// let arr = [1,2,3,4,5]
+// function sumOfArray(arr, lastIndex) {
+//     if(lastIndex<0) {
+//         return 0
+//     }
+//     return arr[lastIndex] + sumOfArray(arr, lastIndex-1)
+// }
+
+// let res = sumOfArray(arr, arr.length-1)
+// console.log(res)
+
+// carrying in javascript 
+
+// function add(a) {
+//     return function(b) {
+//         return function(c) {
+//             return a + b + c
+//         }
+//     }
+
+// }
+
+// let res = add(5)(5)(5)
+// console.log(res)
+
+// function composition 
+
+// function print(n) {
+//     console.log(n)
+// }
+
+// function multiplyBy5(n) {
+//     return n * 5
+// }
+
+// function add(a,b) {
+//     return a+b
+// }
+
+// print(multiplyBy5(add(1,2)))
+
+// https://www.youtube.com/watch?v=33HALfGri7Q&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=85
