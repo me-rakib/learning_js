@@ -1289,3 +1289,18 @@ It does not cause any observeable side effects.
 // print(multiplyBy5(add(1,2)))
 
 // https://www.youtube.com/watch?v=33HALfGri7Q&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=85
+
+// javascript engine
+
+// compiled vs interpreted
+/*
+compiled - compiled languages are directly converted into mechine code
+
+interpreted - interpretor run through a program line by line and execute each command 
+*/
+
+// execution context
+
+// creation phase and executional phase
+
+// https://www.youtube.com/watch?v=O_yEKwVP7Uc&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=88&ab_channel=StackLearner
