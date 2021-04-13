@@ -1304,3 +1304,6 @@ interpreted - interpretor run through a program line by line and execute each co
 // creation phase and executional phase
 
 // https://www.youtube.com/watch?v=O_yEKwVP7Uc&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=88&ab_channel=StackLearner
+
+
+//https://www.youtube.com/watch?v=KZ8WpqVXG4Y&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=93 
