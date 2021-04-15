@@ -1342,3 +1342,6 @@ interpreted - interpretor run through a program line by line and execute each co
 
 // https://www.youtube.com/watch?v=QI9rhJ5mYMQ&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=98
 
+
+//https://www.youtube.com/watch?v=hUyAXtrOQms&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=103
+
