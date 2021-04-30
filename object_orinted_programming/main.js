@@ -229,3 +229,97 @@
 // console.log(rect2.pos)
 
 // https://www.youtube.com/watch?v=T4pvbWvvCDA&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=121&ab_channel=StackLearner
+
+// inheritance 
+
+// function Person(nam) {
+//     this.name = nam 
+// }
+
+// const p1 = new Person("AAAAC")
+// console.log(p1) 
+
+//https://www.youtube.com/watch?v=mQSSiTQSdYQ&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=124&ab_channel=StackLearner
+
+// function Person(nam) {
+//     this.name = nam
+// }
+
+// const p1 = new Person("AAB")
+// console.log(p1)
+
+// let Person = {
+//     name: "Rakib Hasan",
+//     age: 10
+// }
+// console.log(Person)
+
+// for(let i in Person) {
+//     console.log(i)
+// }
+
+// console.log(Object.keys(Person))
+
+// let des = Object.getOwnPropertyDescriptor(Person, "name")
+// console.log(des)
+
+// let baseObj = Object.getPrototypeOf(Person)
+// let des = Object.getOwnPropertyDescriptor(baseObj, 'toString')
+// console.log(des)
+
+// Object.defineProperty(Person, "name", {
+//     enumerable: false,
+//     configurable: false,
+//     writable: false,
+//     value: "R"
+// })
+
+// console.log(Person)
+
+// function Person(nam) {
+//     this.name = nam
+// }
+
+// let p1 = new Person("Holla")
+// console.log(Object.getPrototypeOf(p1))
+// console.log(Person.prototype)
+// console.log(Object.getPrototypeOf(p1)===Person.prototype)
+
+// Person.prototype.PI = 3.1416
+// console.log(p1)
+
+// let p2 = new Person("A")
+// console.log(p2)
+// console.log(p2.PI)
+
+// function Person(nam) {
+//     this.name = nam
+// }
+
+// let p1 = new Person("ABC")
+// Person.prototype.age = 10
+
+// console.log(p1)
+
+// instance member & prototype member
+
+// function Square(w) {
+//     // instanse member
+//     this.width = w
+// }
+
+// Square.prototype = {
+//     // prototype member
+//     draw: function() {
+//         console.log("Drawing")
+//     },
+//     getWidth: function() {
+//         console.log(`My width is ${this.width}`)
+//     }
+// }
+
+// let sq1 = new Square(5)
+// let sq2 = new Square(10)
+// console.log(sq1)
+
+// https://www.youtube.com/watch?v=xWZRdOvVxp0&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=127&ab_channel=StackLearner
