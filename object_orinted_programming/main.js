@@ -323,3 +323,55 @@
 // console.log(sq1)
 
 // https://www.youtube.com/watch?v=xWZRdOvVxp0&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=127&ab_channel=StackLearner
+
+// using instance and prototype member in js
+
+// function Rectangle(wid) {
+//     this.width = wid 
+//     this.getWidth = function() {
+//         console.log(this.width)
+//     }
+// }
+
+// Rectangle.prototype = {
+//     draw: function() {
+//         console.log("Draw")
+//         this.getWidth()
+//     }
+// }
+
+// const r1 = new Rectangle(120)
+
+// prototypical inheritance in js
+
+// function Shape() {
+
+// }
+// Shape.prototype = {
+//     common: function() {
+//         console.log("This is common method")
+//     },
+//     uncommon: function() {
+//         console.log("This method is uncommon")
+//     }
+// }
+
+// function Square(wid) {
+//     this.width = wid
+// }
+
+// Square.prototype = Object.create(Shape.prototype)
+
+// let s1 = new Square(12)
+
+// let shape = new Shape()
+
+// function Circle() {
+
+// }
+// Circle.prototype = Object.create(Shape.prototype)
+
+// let c1 = new Circle()
+
+
+//https://www.youtube.com/watch?v=j6VyadTWf8c&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=131
