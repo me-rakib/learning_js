@@ -375,3 +375,60 @@
 
 
 //https://www.youtube.com/watch?v=j6VyadTWf8c&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=131
+
+// reset constructor after inheritance 
+// function Shape() {
+
+// }
+
+// Shape.prototype.common = function() {
+//         console.log("This is common method")
+//     }
+
+// function Square(wid) {
+//     this.width = wid
+// }
+
+// Square.prototype = Object.create(Shape.prototype)
+// Square.prototype.constructor = Square
+// Square.prototype.draw = function() {
+//         console.log("Drawing")
+//     }
+
+// let s1 = new Square(10)
+
+// calling super with call method
+
+// function extend(Parent, Child) {
+//     Child.constructor = Object.create(Parent.prototype)
+//     Child.prototype.constructor = Child
+// }
+
+// function Shape(color) {
+//     this.color = color
+// }
+
+// Shape.prototype.common = function() {
+//     console.log("this is common")
+// }
+
+// function Square(wid, col) {
+//     Shape.call(this, col)
+//     this.width = wid
+// }
+
+// extend(Shape, Square)
+
+// let s1 = new Square(10, 'red')
+
+// function Circle(r, color) {
+//     Shape.call(this, color)
+//     this.radious = r
+    
+// }
+
+// extend(Shape, Circle)
+
+// let c1 = new Circle(100, 'red')
+
+// https://www.youtube.com/watch?v=9y9doJkoSMg&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=134
