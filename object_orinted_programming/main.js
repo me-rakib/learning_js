@@ -432,3 +432,84 @@
 // let c1 = new Circle(100, 'red')
 
 // https://www.youtube.com/watch?v=9y9doJkoSMg&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=134
+
+// method overriding 
+
+// function Shape(col) {
+//     this.color = col
+// }
+
+// Shape.prototype.common = function() {
+//     console.log("I'm common")
+// }
+
+// function Square(wid) {
+//     this.width = wid 
+// }
+
+// Square.prototype = Object.create(Shape.prototype)
+// Square.prototype.constructor = Square
+
+// Square.prototype.draw = function() {
+//     console.log("I'm drawring")
+// }
+
+// function Circle(col, r) {
+//     Shape.call(this, col)
+//     this.radious = r
+// }
+
+// Circle.prototype = Object.create(Shape.prototype)
+// Circle.prototype.constructor = Circle
+
+// Circle.prototype.common = function() {
+//     Shape.prototype.common.call(this)
+//     console.log("Overridden common")
+// }
+
+// let s = new Square(123)
+// let c = new Circle('Red', 10)
+// let sh = new Shape('Black')
+
+// for(let i of [s,c,sh]) {
+//     i.common()
+// }
+
+// function composition 
+
+// function mixin(target, ...source) {
+//     Object.assign(target.prototype, ...source)
+// }
+
+// const canEat = {
+//     eat: function() {
+//         console.log("Eating")
+//     }
+// }
+// const canWalk = {
+//     walk: function() {
+//         console.log("Walking...")
+//     }
+// }
+// const canSwim = {
+//     swim: function() {
+//         console.log("Swimming...")
+//     }
+// }
+// function Person(name) {
+//     this.name = name 
+// }
+// mixin(Person, canEat, canWalk)
+// const p = new Person("AC")
+// console.log(p)
+
+// function Goldfish(nam) {
+//     this.name = nam
+// }
+
+// mixin(Goldfish, canEat, canSwim)
+// const g = new Goldfish("Gold")
+// console.log(g)
+
+// https://www.youtube.com/watch?v=L8fL5OZlaCc&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&index=138&ab_channel=StackLearner
+
